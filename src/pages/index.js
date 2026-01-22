@@ -50,7 +50,7 @@ export default function Landing() {
                     <Link href="/register" className="black_btn" style={{marginRight: "max(2.5vw, 5px)"}}>
                         Register
                     </Link>
-                    <Link href="https://drive.google.com/file/d/1zN0tMul6S6pUM0fHFYZrnDqNW_usyIJo/view?usp=sharing" className="border_outline" style={{marginLeft: "max(2.5vw, 5px)", borderRadius: 10}}>
+                    <Link href="https://docs.google.com/document/d/1NyYFKSBSNp3gm9YApRq3rY-cy9sQqA3J/edit?usp=sharing&ouid=101114840490664306334&rtpof=true&sd=true" className="border_outline" style={{marginLeft: "max(2.5vw, 5px)", borderRadius: 10}}>
                         Rulebook
                     </Link>
                 </div>
@@ -103,7 +103,7 @@ export default function Landing() {
                         <p className="font-bold">Direct Links:</p>
                         <br />
                         <Link
-                            href="https://drive.google.com/file/d/1zN0tMul6S6pUM0fHFYZrnDqNW_usyIJo/view?usp=sharing"
+                            href="https://docs.google.com/document/d/1NyYFKSBSNp3gm9YApRq3rY-cy9sQqA3J/edit?usp=sharing&ouid=101114840490664306334&rtpof=true&sd=true"
                             className="text-sm"
                         >
                             NJATH Rulebook
