@@ -139,6 +139,15 @@
     margin: 1.5rem 0;
 }
 
+.questionDiv.noDescription {
+    justify-content: center;
+}
+
+.questionDiv.noDescription .queimg {
+    width: 100%;
+    max-width: 800px;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .mainContainer {

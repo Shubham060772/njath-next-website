@@ -8,7 +8,9 @@ function QuestionBox({ imageUrl, title, description, order, level }) {
     console.log(imageUrl);
     console.log(title);
     console.log(description);
-	const descriptionLines = description.split(RegExp("\r|\n"));
+	const descriptionLines = description ? description.split(RegExp("\r|\n")) : [];
+    const hasDescription = description && description.trim().length > 0;
+    
     return (
         <>
             {/* <Modal open={open} handleClose={handleClose} /> */}
@@ -25,13 +27,15 @@ function QuestionBox({ imageUrl, title, description, order, level }) {
                     </div>
 
                 </div>
-                <div className={styles.questionDiv}>
-                    <div className={styles.descrpBox}>
-						{descriptionLines.map((line, index) => {
-							if (line == "") return <br key={index}/>
-							return <p key={index}>{line}</p>
-						})}
-                    </div>
+                <div className={`${styles.questionDiv} ${!hasDescription ? styles.noDescription : ''}`}>
+                    {hasDescription && (
+                        <div className={styles.descrpBox}>
+						    {descriptionLines.map((line, index) => {
+							    if (line == "") return <br key={index}/>
+							    return <p key={index}>{line}</p>
+						    })}
+                        </div>
+                    )}
 
                     {
                         imageUrl ? (<img className={styles.queimg}
